@@ -1,9 +1,5 @@
 <script setup>
 import { ref } from "vue";
-const showDropdown = ref(false);
-function openDropdown() {
-  return (showDropdown.value = !showDropdown.value);
-}
 
 const statusCancel = [
   { label: "Request", name: "request" },
@@ -72,7 +68,7 @@ const statusCancel = [
               </th>
               <th>Resi</th>
               <th>Description</th>
-              <th class="w-20">Status</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -80,16 +76,7 @@ const statusCancel = [
             <td>asdamsihdasdu</td>
             <td>Petugas salah input</td>
             <td>
-              <select class="form-control">
-                <option value="">Choise</option>
-                <option
-                  v-for="(item, index) in statusCancel"
-                  :key="index"
-                  :value="item.name"
-                >
-                  {{ item.label }}
-                </option>
-              </select>
+              <button type="button" class="btn btn-1 text-end">Edit</button>
             </td>
           </tbody>
         </table>

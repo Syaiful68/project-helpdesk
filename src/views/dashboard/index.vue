@@ -1,10 +1,5 @@
-<script setup>
-import Headers from "../dashboard/partial/headerapp.vue";
-</script>
-
 <template>
   <div class="page-wrapper">
-    <Headers></Headers>
     <div class="page-body">
       <div class="container-xl">
         <div class="row row-deck row-cards">
