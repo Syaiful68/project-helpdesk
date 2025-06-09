@@ -22,7 +22,22 @@ const router = createRouter({
           component:()=>import('../views/cancel/detail.vue')
         },
       ]
-    }
+    },
+    {
+      path:'/courier',
+      children:[
+        {
+          path:'',
+          name:'courier.index',
+          component:()=>import('../views/courier/index.vue')
+        },
+        {
+          path:':id/show',
+          name:'courier.show',
+          component:()=>import('../views/courier/detail.vue')
+        },
+      ]
+    },
   ],
 })
 

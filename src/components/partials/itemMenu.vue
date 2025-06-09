@@ -1,11 +1,28 @@
 <script setup>
-defineProps({
-  menu: Object,
-});
+const Menus = [
+  {
+    id: 1,
+    label: "Dashboard",
+    path: "/",
+    icon: "fa-solid fa-chart-simple",
+  },
+  {
+    id: 2,
+    label: "Cancel",
+    path: "/cancel",
+    icon: "fa-solid fa-pen-to-square",
+  },
+  {
+    id: 3,
+    label: "Couriers",
+    path: "/courier",
+    icon: "fa-solid fa-car",
+  },
+];
 </script>
 <template>
   <li
-    v-for="(item, index) in menu"
+    v-for="(item, index) in Menus"
     class="nav-item"
     :class="{ active: $route.path === item.path }"
     :key="index"

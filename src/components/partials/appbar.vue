@@ -46,9 +46,7 @@ import MenuItem from "@/components/partials/itemMenu.vue";
       </div>
       <div class="collapse navbar-collapse" id="navbar-menu">
         <!-- BEGIN NAVBAR MENU -->
-        <ul class="navbar-nav">
-          <MenuItem />
-        </ul>
+        <ul class="navbar-nav"></ul>
         <!-- END NAVBAR MENU -->
       </div>
     </div>

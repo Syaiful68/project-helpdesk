@@ -1,15 +1,10 @@
 <script setup>
-import Headers from "../cancel/partial/headerapp.vue";
-import ModalCancel from "../cancel/partial/modalCancel.vue";
-
-const items = [
-  { id: 1, name: "Cancel List", list: [{ id: 1, label: "Cancel", path: "/" }] },
-];
+import Headers from "../courier/partial/headerapp.vue";
 </script>
 
 <template>
   <div class="page-wrapper">
-    <Headers :items="items"></Headers>
+    <Headers></Headers>
     <div class="page-body">
       <div class="container-xl">
         <div class="row row-deck row-cards">
@@ -22,5 +17,4 @@ const items = [
       </div>
     </div>
   </div>
-  <ModalCancel />
 </template>

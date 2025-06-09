@@ -1,20 +1,5 @@
 <script setup>
 import MenuItem from "@/components/partials/itemMenu.vue";
-
-const items = [
-  {
-    id: 1,
-    label: "Dashboard",
-    path: "/",
-    icon: "fa-solid fa-chart-simple",
-  },
-  {
-    id: 2,
-    label: "Cancel",
-    path: "/cancel",
-    icon: "fa-solid fa-pen-to-square",
-  },
-];
 </script>
 
 <template>
@@ -1560,7 +1545,7 @@ const items = [
       <div class="collapse navbar-collapse" id="sidebar-menu">
         <!-- BEGIN NAVBAR MENU -->
         <ul class="navbar-nav pt-lg-3">
-          <MenuItem :menu="items" />
+          <MenuItem />
         </ul>
         <!-- END NAVBAR MENU -->
       </div>
