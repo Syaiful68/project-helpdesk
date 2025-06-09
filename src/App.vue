@@ -5,7 +5,9 @@ import Appbar from "@/components/partials/appbar.vue";
 </script>
 
 <template>
-  <Navbar></Navbar>
-  <Appbar></Appbar>
-  <router-view></router-view>
+  <div class="page">
+    <Navbar></Navbar>
+    <Appbar></Appbar>
+    <router-view></router-view>
+  </div>
 </template>
