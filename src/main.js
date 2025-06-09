@@ -1,4 +1,6 @@
-import './assets/main.css'
+// import './assets/main.css'
+
+import '@tabler/core/dist/css/tabler.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
