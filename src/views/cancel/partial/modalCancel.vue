@@ -15,7 +15,16 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body"></div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Resi</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn me-auto" data-bs-dismiss="modal">
             Close
