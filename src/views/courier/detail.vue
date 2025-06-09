@@ -1,21 +1,10 @@
 <script setup>
-import Headers from "../cancel/partial/headerapp.vue";
-
-const items = [
-  {
-    id: 1,
-    name: "Cancel List",
-    list: [
-      { id: 1, label: "Cancel", path: "" },
-      { id: 2, label: "Detail", path: "/cancel/detail" },
-    ],
-  },
-];
+import Headers from "./partial/headerapp.vue";
 </script>
 
 <template>
   <div class="page-wrapper">
-    <Headers :items="items"></Headers>
+    <Headers></Headers>
     <div class="page-body">
       <div class="container-xl">
         <div class="row row-deck row-cards">

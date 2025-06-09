@@ -16,11 +16,6 @@ const router = createRouter({
           name:'cancel.index',
           component:()=>import('../views/cancel/index.vue')
         },
-        {
-          path:':id/show',
-          name:'cancel.show',
-          component:()=>import('../views/cancel/detail.vue')
-        },
       ]
     },
     {
