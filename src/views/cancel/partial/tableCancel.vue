@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import debounce from "lodash.debounce";
 
 const statusCancel = [
   { label: "Request", name: "request" },
@@ -7,6 +8,15 @@ const statusCancel = [
   { label: "Done", name: "Done" },
   { label: "Reject", name: "Reject" },
 ];
+
+const emit = defineEmits(["searchQuery"]);
+const searchTerm = ref();
+watch(
+  searchTerm,
+  debounce((value) => {
+    emit("searchQuery", value);
+  })
+);
 </script>
 
 <template>
@@ -68,14 +78,14 @@ const statusCancel = [
               </th>
               <th>Resi</th>
               <th>Description</th>
-              <th></th>
+              <th class="w-1"></th>
             </tr>
           </thead>
           <tbody>
             <td>1</td>
             <td>asdamsihdasdu</td>
             <td>Petugas salah input</td>
-            <td>
+            <td class="text-end">
               <button type="button" class="btn btn-1 text-end">Edit</button>
             </td>
           </tbody>
